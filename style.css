@@ -15,10 +15,12 @@ body {
     display:flex;
     flex-direction: column;
     min-height: 100vh;
+    gap:1rem;
 }
 
 header, footer {
     display:flex;
+    flex-shrink: 0;
     height: 10vh;
     width: 100%;
     align-items: center;
@@ -42,6 +44,10 @@ nav ul  {
     display:flex;
     gap:1rem;
     padding-left: 1rem;
+}
+
+a i {
+  color:white;
 }
 
 /* utilidades */
@@ -158,12 +164,39 @@ nav ul  {
 .carousel-prev{left:8px}           /* seta esquerda, dentro da borda */
 .carousel-next{right:8px}          /* seta direita, dentro da borda */
 .carousel-btn:disabled{
+
   opacity:.25;                     /* seta apagada quando não há mais slides */
   cursor:default;                  /* tira a mãozinha */
 }
 .carousel-btn:focus-visible{
   outline:3px solid #7aa2ff;       /* contorno visível ao navegar pelo teclado */
 }
+
+
+/* galeria */
+#galeria {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  padding:1rem;
+  place-items: center;
+}
+
+.cards {
+  display: flex;
+  width: 150px;
+  height: 150px;
+  background-color: #7aa2ff;
+  padding-top: 2em;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap:1rem;
+
+}
+
+
+
+
 @media (max-width:480px){
   .carousel-setas-item{flex-basis:80%}   /* no celular, 1 slide e um pedaço do próximo */
 }
