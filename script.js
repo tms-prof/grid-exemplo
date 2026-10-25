@@ -23,4 +23,4 @@ acordeon('acordeon', 'O que é HTML?', 'Uma linguagem de marcação.');
 
 carouselSetas('carousel-setas');
 
-galeria('galeria', 'grid', clientes );
+galeria('galeria', 'flex', clientes );

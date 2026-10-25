@@ -1,6 +1,10 @@
 export default function acordeon(wrapperId, pergunta, resposta) {
   const wrapper = document.getElementById(wrapperId);
-  if (!wrapper) return;
+  
+  if (!wrapper) {
+  console.warn(`acordeon: #${wrapperId} não encontrado`);
+  return;
+}
 
   const item = document.createElement('div');
   item.className = 'acordeon';

@@ -1,22 +1,17 @@
 
 export default function carouselSetas(wrapperId){
-const wrapper = document.getElementById('wrapperId');
-const item = `<!-- bloco que agrupa tudo e serve de referência para as setas -->
-  <!-- botão da seta esquerda -->
-  <button class="carousel-btn carousel-prev" aria-label="Anterior"></button>
-
-  <!-- trilha que rola na horizontal (a barra fica escondida pelo CSS) -->
-  <div class="carousel-track">
-    <div class="carousel-setas-item" style="background:#2457d6">1</div>
-    <div class="carousel-setas-item" style="background:#c2410c">2</div>
-    <div class="carousel-setas-item" style="background:#15803d">3</div>
-    <div class="carousel-setas-item" style="background:#7e22ce">4</div>
-    <div class="carousel-setas-item" style="background:#be123c">5</div>
-    <div class="carousel-setas-item" style="background:#0e7490">6</div>
-  </div>
-  <!-- botão da seta direita -->
-  <button class="carousel-btn carousel-next" aria-label="Próximo"></button>
-</div>` ;
+const wrapper = document.getElementById(wrapperId);
+const item = `
+    <button class="carousel-btn carousel-prev" aria-label="Anterior">‹</button> 
+      <div class="carousel-track">
+        <div class="carousel-setas-item" style="background:#2457d6">1</div>
+        <div class="carousel-setas-item" style="background:#c2410c">2</div>
+        <div class="carousel-setas-item" style="background:#15803d">3</div>
+        <div class="carousel-setas-item" style="background:#7e22ce">4</div>
+        <div class="carousel-setas-item" style="background:#be123c">5</div>
+        <div class="carousel-setas-item" style="background:#0e7490">6</div>
+      </div>
+    <button class="carousel-btn carousel-next" aria-label="Próximo">›</button>`;
 
 wrapper.innerHTML = item;
 
