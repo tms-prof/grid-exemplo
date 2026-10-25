@@ -5,7 +5,7 @@
 
 }
 
-html, body {
+html {
     height: 100%;
     color:white;
 
@@ -17,14 +17,21 @@ body {
     min-height: 100vh;
     gap:1rem;
     padding:1rem;
-    background-color: rgb(26, 25, 25);
+    background-color: rgb(217, 136, 136);
 }
 
+main {
+  display:flex;
+  flex-direction: column;
+
+}
 section {
   margin:1rem;
   padding:1rem;
+  height: 80vh;
   border-radius: 8px;
-  background-color: black;
+  background-color: rgb(7, 7, 7);
+  border: 2px solid white;
 }
 
 header, footer {
@@ -132,10 +139,8 @@ a i {
 /* carousel com setas e sem barra horizontal */
 
 #carousel-setas{
-  position:relative;               /* as setas se posicionam em relação a este bloco */
-  width:100%;                      /* ocupa toda a largura do container pai */
-  min-width:0;                    /* evita encolher dentro de pai flex (.sections) */
-  margin:1rem;
+  position: relative;   /* para as setas se posicionarem nele */
+  min-width: 0;
 }
 
 .carousel-track{
@@ -225,11 +230,7 @@ main {
     background-color: black;
 }
 
-.sections {
-    display:flex;
-    height: 80vh;
-    width: 100%;
-}
+
 
 button {
     width: 80px;

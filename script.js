@@ -18,8 +18,8 @@ const clientes = [
 
 
 
-acordeon('wrapper', 'O que é JavaScript?', 'Uma linguagem de programação.');
-acordeon('wrapper', 'O que é HTML?', 'Uma linguagem de marcação.');
+acordeon('acordeon', 'O que é JavaScript?', 'Uma linguagem de programação.');
+acordeon('acordeon', 'O que é HTML?', 'Uma linguagem de marcação.');
 
 carouselSetas('carousel-setas');
 

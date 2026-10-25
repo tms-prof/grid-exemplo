@@ -1,11 +1,9 @@
 
 export default function carouselSetas(wrapperId){
-const wrapper = document.getElementById(wrapperId);
-
+const wrapper = document.getElementById('wrapperId');
 const item = `<!-- bloco que agrupa tudo e serve de referência para as setas -->
-<div id="carousel-setas">
   <!-- botão da seta esquerda -->
-  <button class="carousel-btn carousel-prev" aria-label="Anterior">‹</button>
+  <button class="carousel-btn carousel-prev" aria-label="Anterior"></button>
 
   <!-- trilha que rola na horizontal (a barra fica escondida pelo CSS) -->
   <div class="carousel-track">
@@ -16,9 +14,8 @@ const item = `<!-- bloco que agrupa tudo e serve de referência para as setas --
     <div class="carousel-setas-item" style="background:#be123c">5</div>
     <div class="carousel-setas-item" style="background:#0e7490">6</div>
   </div>
-
   <!-- botão da seta direita -->
-  <button class="carousel-btn carousel-next" aria-label="Próximo">›</button>
+  <button class="carousel-btn carousel-next" aria-label="Próximo"></button>
 </div>` ;
 
 wrapper.innerHTML = item;
